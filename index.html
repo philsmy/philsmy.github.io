@@ -18,10 +18,9 @@
         <section id="contact" class="mb-4">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:phil@philsmy.com">phil@philsmy.com</a></p>
-            <p>Phone: +81 (70) 2646-1439</p>
             <p>GitHub: <a href="https://github.com/philsmy">github.com/philsmy</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/philsmy">linkedin.com/in/philsmy</a></p>
-            <p>YouTube: <a href="https://www.youtube.com/user/RailsTraining">Rails Training</a></p>
+            <p>YouTube: <a href="https://www.youtube.com/@PhilSmy">Rails Training</a></p>
         </section>
         <section id="profile" class="mb-4">
             <h2>Profile</h2>
@@ -35,11 +34,31 @@
         </section>
         <section id="experience" class="mb-4">
             <h2>Professional Experience</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Founder & Lead Developer | Zonmaster | July 2015 - Present</h5>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">More Info</button>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Founder & Lead Developer | <a href="https://zonmaster.com" target="_blank">Zonmaster</a> | July 2015 - Present</h5>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#zmModal">More Info</button>
+                    </div>
                 </div>
+                <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title">Founder & Fullstack Software Engineer | <a href="https://lotterycanada.com" target="_blank">LotteryCanada</a> | July 1997 - Present</h5>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#lotCanModal">More Info</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title">Founder & Fullstack Software Engineer | Toygaroo | Jan 2010 - Sep 2013</h5>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#toygarooModal">More Info</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- Add other experiences here -->
         </section>
@@ -53,17 +72,56 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal fade" id="zmModal" tabindex="-1" role="dialog" aria-labelledby="zmModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modal1Label">Founder & Lead Developer | Zonmaster | July 2015 - Present</h5>
+                    <h5 class="modal-title" id="zmModalLabel">Founder & Lead Developer | Zonmaster | July 2015 - Present</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Launched and developed comprehensive customer management tools for Amazon Sellers, successfully acquiring over 15,000 Amazon Sellers as customers...</p>
+                    <p>Launched and developed comprehensive customer management tools for Amazon Sellers, successfully acquiring over 15,000 Amazon Sellers as customers.</p>
+                    <p>Managed all business aspects, from daily operations to long-term strategic planning.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="lotCanModal" tabindex="-1" role="dialog" aria-labelledby="lotCanModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lotCanModalLabel">Founder & Fullstack Software Engineer | <a href="https://lotterycanada.com" target="_blank">LotteryCanada</a> | July 1997 - Present</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Designed and built Canada’s long-standing Lottery Results website, utilizing Ruby on Rails since 2005.</p>
+                    <p>Created a fully automated service for collecting lottery results across North America and managed outgoing APIs for providing results to services such as cell providers and TV.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="toygarooModal" tabindex="-1" role="dialog" aria-labelledby="toygarooModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="toygarooModalLabel">Founder & Fullstack Software Engineer | Toygaroo | Jan 2010 - Sep 2013</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Designed and developed a full application suite for this innovative 'Netflix of Toys' startup.</p>
+                    <p>Oversaw all technical aspects of operations and coordinated with the technical branch of investors (Mark Cuban and Kevin O'Learty from TV’s Shark Tank).</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
