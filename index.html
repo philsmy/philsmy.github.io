@@ -6,44 +6,74 @@
     <meta name="description" content="Phil Smy - Ruby on Rails Developer, Technical Founder, Expert Software Developer">
     <meta name="keywords" content="Phil Smy, Ruby on Rails Developer, Technical Founder, Expert Software Developer">
     <title>Phil Smy - Ruby on Rails Developer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Phil Smy</h1>
-        <h2>Entrepreneur | Software Development Leader | Ruby on Rails Specialist</h2>
-    </header>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:phil@philsmy.com">phil@philsmy.com</a></p>
-        <p>Phone: +81 (70) 2646-1439</p>
-        <p>GitHub: <a href="https://github.com/philsmy">github.com/philsmy</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/philsmy">linkedin.com/in/philsmy</a></p>
-        <p>YouTube: <a href="https://www.youtube.com/user/RailsTraining">Rails Training</a></p>
-    </section>
-    <section id="profile">
-        <h2>Profile</h2>
-        <p>With over 20 years of commercial development experience, I have honed my skills as a software developer with a particular focus on Ruby on Rails...</p>
-    </section>
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <p>Languages: Ruby, Javascript, Java, C++, Shell, HTML, CSS, SCSS, SQL</p>
-        <p>Frameworks: Rails, Node (Express)</p>
-        <p>Infrastructure: DigitalOcean, Docker, AWS, Self-hosting, Git, Linux SysAdmin</p>
-    </section>
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <h3>Founder & Lead Developer | Zonmaster | July 2015 - Present</h3>
-        <p>Launched and developed comprehensive customer management tools for Amazon Sellers, successfully acquiring over 15,000 Amazon Sellers as customers...</p>
-        <!-- Add other experiences here -->
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <p>Master’s Degree in Film - Staffordshire University in Stoke-on-Trent, United Kingdom.</p>
-    </section>
-    <footer>
-        <p>© 2023 Phil Smy</p>
-    </footer>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Phil Smy</h1>
+            <h2>Entrepreneur | Software Development Leader | Ruby on Rails Specialist</h2>
+        </header>
+        <section id="contact" class="mb-4">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:phil@philsmy.com">phil@philsmy.com</a></p>
+            <p>Phone: +81 (70) 2646-1439</p>
+            <p>GitHub: <a href="https://github.com/philsmy">github.com/philsmy</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/philsmy">linkedin.com/in/philsmy</a></p>
+            <p>YouTube: <a href="https://www.youtube.com/user/RailsTraining">Rails Training</a></p>
+        </section>
+        <section id="profile" class="mb-4">
+            <h2>Profile</h2>
+            <p>With over 20 years of commercial development experience, I have honed my skills as a software developer with a particular focus on Ruby on Rails...</p>
+        </section>
+        <section id="skills" class="mb-4">
+            <h2>Technical Skills</h2>
+            <p>Languages: Ruby, Javascript, Java, C++, Shell, HTML, CSS, SCSS, SQL</p>
+            <p>Frameworks: Rails, Node (Express)</p>
+            <p>Infrastructure: DigitalOcean, Docker, AWS, Self-hosting, Git, Linux SysAdmin</p>
+        </section>
+        <section id="experience" class="mb-4">
+            <h2>Professional Experience</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Founder & Lead Developer | Zonmaster | July 2015 - Present</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">More Info</button>
+                </div>
+            </div>
+            <!-- Add other experiences here -->
+        </section>
+        <section id="education" class="mb-4">
+            <h2>Education</h2>
+            <p>Master’s Degree in Film - Staffordshire University in Stoke-on-Trent, United Kingdom.</p>
+        </section>
+        <footer class="text-center my-4">
+            <p>© 2023 Phil Smy</p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Founder & Lead Developer | Zonmaster | July 2015 - Present</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Launched and developed comprehensive customer management tools for Amazon Sellers, successfully acquiring over 15,000 Amazon Sellers as customers...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 
